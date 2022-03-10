@@ -171,4 +171,4 @@ const loadPosts = async () =>{
   showPosts(posts);
 }
 
-loadPosts();
+loaPosts();
