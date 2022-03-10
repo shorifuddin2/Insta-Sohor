@@ -106,6 +106,7 @@ const createPost = (post) => {
                 </div>
 
                 <div class="post__content">${displayContent(post.description)}</div>
+              
 
                 <div class="post__infos">
                   <div class="post__likes">
@@ -123,9 +124,10 @@ const createPost = (post) => {
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
-                          ${post.comments?.user}
+                          ${post.comments[0].user}
+                          
                       </a>
-                      ${post.comments?.text}
+                      ${post.comments[0].text}
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>
